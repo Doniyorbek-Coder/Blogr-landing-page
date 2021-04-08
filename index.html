@@ -14,95 +14,69 @@
 
   <!-- HEADER -->
   <header class="site-header">
-    <div class="container header-container">
+    <div class="container bg-container">
+    <div class="header-container">
       <div class="site-logo">
-        <img src="images/logo.svg" width="101" height="40" alt="Sito Logo" class="logo">
+        <img class="logo" src="images/logo.svg" width="101" height="40" alt="Sito Logo" >
       </div>
       <ul class="sitenav-list">
-        <li class="sitenav-item"><a class="sitenav-link" href="#" >Product</a></li>
-        <li class="sitenav-item"><a class="sitenav-link" href="#" >Product</a></li>
-        <li class="sitenav-item"><a class="sitenav-link" href="#" >Product</a></li>
-        <li class="sitenav-item"><a class="sitenav-link" href="#" >Product</a></li>
-        <li class="sitenav-item"><a class="sitenav-link" href="#" >Product</a></li>
+        <li class="sitenav-item"><a class="sitenav-link" href="#">Product</a>
+          <ul class="dropdown-list">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Contact</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Newsletter</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li class="sitenav-item"><a class="sitenav-link" href="#">Company</a>
+          <ul class="dropdown-list">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Contact</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Newsletter</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li class="sitenav-item"><a class="sitenav-link" href="#">Connect</a>
+          <ul class="dropdown-list">
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Contact</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">Newsletter</a></li>
+            <li class="dropdown-item"><a href="#" class="dropdown-link">LinkedIn</a></li>
+          </ul>
+        </li>
+        <li class="sitenav-item login"><a class="sitenav-link" href="#">Login</a>
+        </li>
+        <li class="sitenav-item"><a class="sitenav-link btn" href="#">Sign Up</a>
+        </li>
       </ul>
     </div>
+    <div class="main-container">
+      <h1 class="header-title">A modern publishing platform</h1>
+      <p class="header-text">Grow your audience and build your online brand</p>
+      <ul class="sitenav-list">
+        <li class="header-item"><a href="#" class="sitenav-link btn1">Start for Free</a></li>
+        <li class="header-item"><a href="#" class="sitenav-link btn1 btn-outline">Learn More</a></li>
+      </ul>
+    </div>
+  </div>
   </header>
 
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
-
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
+ <!-- MAIN -->
+ <main class="site-content">
+   
+     <section class="design">
+       <div class="container design-container">
+         <h2 class="design-title">Designed for the future</h3>
+         <div class="design-list">
+           <div class="design-item">
+             <h3 class="design-item-title">Introducing an extensible editor</h3>
+             <p class="design-item-text">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+           </div>
+           <div class="design-item">
+             <h3 class="design-item-title">Robust content management</h3>
+             <p class="design-item-text">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+           </div>
+         </div>
+       </div>
+     </section>
+ </main>
+<script src="js/main.js"></script>
 </body>
 </html>
