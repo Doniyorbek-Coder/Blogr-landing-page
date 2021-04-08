@@ -51,6 +51,7 @@
 --red-hover:#FF7B86;
 --black:#1F3E5A;
 --droptext:#2D2E40;
+--footer-bg:#24242c;
 }
 
 /*Main Styles*/
@@ -73,7 +74,6 @@ body {
   letter-spacing: 0.5px;
   background-color: var(--body);
   color: var(--dark-grey);
-  
 }
 
 img {
@@ -94,10 +94,8 @@ img {
 .site-header{ 
   background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
   border-radius: 0px 0px 0px 100px;
+  margin-bottom: 150px;
 }
-/* .header{
-background-image: url(../images/Combined.png);
-} */
 
 .header-container{
   display: flex;
@@ -274,4 +272,162 @@ margin-bottom: 48px;
 .btn-outline:hover{
   background-color: var(--white);
   color: var(--red-hover);
+}
+
+.site-content{
+  position: relative;
+}
+
+.design{
+  margin-bottom: 262px;
+}
+
+.design-title{
+  margin-bottom: 93px;
+font-weight: 600;
+font-size: 40px;
+line-height: 61px;
+text-align: center;
+letter-spacing: -1.2px;
+color: var(--black);
+}
+
+.design-item{
+  width: 540px;
+}
+
+.design-item-title{
+margin: 0;
+margin-top: 64px;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+color: var(--black);
+}
+
+.design::before{
+  display: block;
+  content:"";
+  background-image: url(../images/illustration-editor-desktop.svg);
+  width: 683px;
+  height: 882px;
+  position: absolute;
+  right: -0;
+  top: -79px;
+}
+
+.phone{
+  background: linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
+border-radius: 0px 100px;
+margin-bottom: 301px;
+}
+
+.phone-container::before{
+  z-index: 100;
+  display: block;
+  content: "";
+  background-image: url(../images/illustration-phones.svg);
+  width: 552px;
+  height: 579px;
+  position: absolute;
+  left: -20px;
+  top: -70px;
+}
+
+.phone-container{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.phone-description{
+  width: 540px;
+  padding-top: 111px;
+  padding-bottom: 111px;
+}
+
+.phone-description-title{
+  margin: 0;
+  font-weight: 600;
+font-size: 40px;
+line-height: 61px;
+letter-spacing: -1.2px;
+color: var(--white);
+margin-bottom: 5px;
+}
+
+.phone-description-text{
+  margin: 0;
+  color: var(--white);
+}
+
+.phone-img{
+  position: absolute; 
+  left: 0;
+  top: -64px;
+}
+
+.desktop-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 308px;
+}
+.desktop{
+  position: relative;
+}
+.desktop-head::before{
+  display: block;
+  content:"";
+  background-image: url(../images/illustration-laptop-desktop.svg);
+  width: 974px;
+  height: 786px;
+  position: absolute;
+  left: -275px;
+  top: -125px;
+}
+
+.site-footer{
+background: var(--footer-bg);
+border-radius: 0px 100px 0px 0px;
+}
+
+.footer-menu{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.footer-list{
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-title{
+  margin: 0;
+  margin-bottom: 21px;
+  font-weight: 500;
+font-size: 15px;
+line-height: 33px;
+color: var(--white);
+}
+.footer-link{
+  text-decoration: none;
+  color: var(--light-grey);
+  font-weight: normal;
+font-size: 15px;
+line-height: 33px;
+}
+.footer-link:hover{
+  text-decoration: underline;
+}
+.footer-container{
+  padding: 70px 0;
+}
+.logo-item{
+  margin-right: 184px;
+}
+
+.footer-menu-item:not(:first-child){
+  flex: 1;
 }
