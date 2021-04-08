@@ -43,7 +43,12 @@
 
 /* Variables */
 :root{
-
+--body:#f2f2f2;
+--white:#ffffff;
+--light-grey:rgba(255, 255, 255,0.75);
+--dark-grey:#4C5862;;
+--red:#FF505C; 
+--black:#1F3E5A;
 }
 
 /*Main Styles*/
@@ -59,29 +64,21 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Karla", "Arial", sans-serif;
+  font-family: "Overpass", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 26px;
-  background-color: #fff;
-  color: #837d88;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  background-color: var(--body);
+  color: var(--dark-grey);
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-/*
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-*/
+
 .container {
   max-width: 1150px;
   padding-left: 20px;
