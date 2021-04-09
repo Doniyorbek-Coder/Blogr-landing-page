@@ -1,43 +1,38 @@
 /* FONTS */
-/* overpass-300 - latin */
 @font-face {
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/overpass-v5-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/overpass-v5-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/overpass-v5-latin-300.woff2') format('woff2'), 
+       url('../fonts/overpass-v5-latin-300.woff') format('woff');
 }
-/* overpass-600 - latin */
 @font-face {
   font-family: 'Overpass';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/overpass-v5-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/overpass-v5-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/overpass-v5-latin-600.woff2') format('woff2'), 
+       url('../fonts/overpass-v5-latin-600.woff') format('woff');
 }
-/* ubuntu-regular - latin */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/ubuntu-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'), 
+       url('../fonts/ubuntu-v15-latin-regular.woff') format('woff');
 }
-/* ubuntu-500 - latin */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/ubuntu-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), 
+       url('../fonts/ubuntu-v15-latin-500.woff') format('woff');
 }
-/* ubuntu-700 - latin */
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/ubuntu-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/ubuntu-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/ubuntu-v15-latin-700.woff2') format('woff2'), 
+       url('../fonts/ubuntu-v15-latin-700.woff') format('woff');
 }
 
 
@@ -70,10 +65,12 @@ body {
   font-family: "Overpass", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
+  font-display: swap;
   line-height: 28px;
   letter-spacing: 0.5px;
   background-color: var(--body);
   color: var(--dark-grey);
+  overflow-x: hidden;
 }
 
 img {
@@ -92,9 +89,10 @@ img {
 /* HEADER */
 
 .site-header{ 
-  background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+  background: url(../images/bg-pattern-intro.svg), linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    background-repeat: no-repeat;
+    background-position: 26% 52%;
   border-radius: 0px 0px 0px 100px;
-  margin-bottom: 150px;
 }
 
 .header-container{
@@ -131,6 +129,7 @@ img {
 }
 
 .sitenav-link{
+  padding: 27px 0;
   text-decoration: none;
   font-family: "Ubuntu","Arial",sans-serif;
 font-weight: bold;
@@ -160,7 +159,9 @@ transition: transform 0.3s ease-in;
 .login{
   margin-left: auto;
 }
-
+.login-link:hover{
+  color: var(--white);
+}
 .btn{
   padding: 15px 40px;
   background-color: var(--white);
@@ -173,22 +174,6 @@ transition: transform 0.3s ease-in;
 .btn1:hover{
   background-color: var(--red-hover);
   color: var(--white);
-}
-.dropdown-list-show{
-  display:block;
-  width: 168px;
-  position: absolute;
-  left:50%;
-  transform: translateX(-50%);
-  top: 100%;
-  background: var(--white);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
-  border-radius: 5px;
-  list-style-type: none;
-  padding: 24px;
-  margin: 0;
-  margin-top: 27px;
-  transition: all 0.3s ease-in-out;
 }
 
 .dropdown-list{
@@ -204,8 +189,8 @@ transition: transform 0.3s ease-in;
   list-style-type: none;
   padding: 24px;
   margin: 0;
-  margin-top: 27px;
   transition: all 0.3s ease-in-out;
+
 }
 
 
@@ -216,6 +201,7 @@ display: block;
   transform: rotate(180deg);
 }
 .dropdown-link{
+font-family: "Ubuntu","Arial",sans-serif;
 font-weight: normal;
 font-size: 15px;
 line-height: 33px;
@@ -224,7 +210,7 @@ text-decoration: none;
 }
 
 .dropdown-link:hover{
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main-container{
@@ -274,12 +260,14 @@ margin-bottom: 48px;
   color: var(--red-hover);
 }
 
-.site-content{
+.design-container{
   position: relative;
 }
 
 .design{
-  margin-bottom: 262px;
+  padding-top: 150px;
+ padding-bottom: 262px;
+ overflow: hidden;
 }
 
 .design-title{
@@ -305,19 +293,23 @@ line-height: 28px;
 color: var(--black);
 }
 
-.design::before{
+.design-container::before{
   display: block;
   content:"";
   background-image: url(../images/illustration-editor-desktop.svg);
-  width: 683px;
+  width: 925px;
   height: 882px;
   position: absolute;
-  right: -0;
-  top: -79px;
+  left: 613px;
+  top: -78px;
 }
 
 .phone{
-  background: linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
+  background: url(../images/bg-pattern-circles.svg), linear-gradient( 
+    135deg
+     , #2D2E40 0%, #3F4164 100%);
+        background-repeat: no-repeat;
+        background-position: -50% 80%;
 border-radius: 0px 100px;
 margin-bottom: 301px;
 }
@@ -371,18 +363,17 @@ margin-bottom: 5px;
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 308px;
-}
-.desktop{
   position: relative;
 }
-.desktop-head::before{
+
+.desktop-container::before{
   display: block;
   content:"";
   background-image: url(../images/illustration-laptop-desktop.svg);
   width: 974px;
   height: 786px;
   position: absolute;
-  left: -275px;
+  left: -423px;
   top: -125px;
 }
 
